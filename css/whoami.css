@@ -1,0 +1,116 @@
+.page--whoami {
+    min-height: 100vh;
+    background: url("../images/whoami_background.jpg") center / cover no-repeat fixed;
+    color: #fff;
+}
+
+.page--whoami .header {
+    min-height: auto;
+    background: none;
+}
+
+/* КАРТОЧКИ ABOUT */
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 50px;
+    background-color: rgba(22, 22, 22, 0.7);
+}
+
+.about-card {
+    max-width: 690px;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(22, 22, 22, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transform: translateY(40px);
+    animation: about-card-fade-in 1s ease forwards;
+}
+
+.about-card__image {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid lightpink;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 192, 203, 0.5);
+}
+
+.about-card__title {
+    position: relative;
+    margin: 0 0 40px;
+    color: lightpink;
+    font-size: 36px;
+    text-align: center;
+}
+
+.about-card__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    width: 0;
+    height: 3px;
+    border-radius: 3px;
+    background: lightpink;
+    transform: translateX(-50%);
+    box-shadow:
+        0 0 10px rgba(255, 192, 203, 0.6),
+        0 0 20px rgba(255, 182, 193, 0.5),
+        0 0 30px rgba(255, 182, 193, 0.3);
+    animation: about-title-line-grow 2.3s ease forwards;
+}
+
+.about-card__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* АДПАТИВ */
+
+@media (max-width: 768px) {
+    .about {
+        padding: 100px 16px 32px;
+    }
+
+    .about-card {
+        padding: 28px 20px;
+    }
+
+    .about-card__image {
+        width: 130px;
+        height: 130px;
+    }
+
+    .about-card__title {
+        font-size: 30px;
+    }
+
+    .about-card__text {
+        font-size: 16px;
+    }
+}
+
+/* АНИМАЦИИ */
+
+@keyframes about-card-fade-in {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes about-title-line-grow {
+    100% {
+        width: 80%;
+    }
+}
