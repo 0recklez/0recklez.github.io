@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>password generator</title>
+</head>
+<body>
+<div class="generator">
+    <div class="generator__password">
+        <p id="password-text">password</p>
+    </div>
+    <p id="length-text">Password Length</p>
+    <span class="popup">Скопировано!</span>
+    <label>
+        <input class="input" value="25">
+        <input type="range" class="slider" value="25" min="1" max="50">
+    </label>
+    <div class="form-group">
+        <label>
+            <input type="checkbox" name="numbers" class="real-checkbox" id="numbersCheckbox">
+            <span class="custom-checkbox"></span>
+            numbers
+        </label>
+    </div>
+
+    <div class="form_group">
+        <label>
+            <input type="checkbox" name="symbol" class="real-checkbox" id="symbolsCheckbox">
+            <span class="custom-checkbox"></span>
+            symbols
+        </label>
+    </div>
+
+    <button class="generator__button">generate</button>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

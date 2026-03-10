@@ -74,19 +74,20 @@
     opacity: 0.85;
 }
 
-.projects__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 30px;
-}
 
 /* КАРТОЧКИ ПРОЕКТОВ */
 
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
 .project-card {
     position: relative;
-    display: block;
+    display: flex;
     overflow: hidden;
-    padding: 22px 22px 20px;
+    padding: 30px 22px 30px;
     border: 1px solid rgba(255, 192, 203, 0.25);
     border-radius: 18px;
     background: rgba(22, 22, 22, 0.75);
@@ -98,8 +99,16 @@
         0 0 20px rgba(255, 192, 203, 0.15);
     opacity: 0;
     transform: translateY(18px);
-    animation:
-        project-card-appear 0.7s ease forwards;
+    animation: project-card-appear 0.7s ease forwards;
+}
+
+.project-card__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 .project-card:nth-child(1) {
@@ -144,19 +153,14 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(
-        circle at top left,
-        rgba(255, 192, 203, 0.22),
-        transparent 60%
-    );
+    background: radial-gradient(circle at top left,
+            rgba(255, 192, 203, 0.22),
+            transparent 60%);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
-.project-card__content {
-    position: relative;
-    z-index: 1;
-}
+
 
 .project-card__title {
     margin: 0 0 10px;
@@ -175,6 +179,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin-top: auto;
 }
 
 .project-card__tag {

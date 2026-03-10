@@ -1,0 +1,57 @@
+body.stopwatch-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: #502891;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stopwatch-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    min-height: 400px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+}
+
+.stopwatch {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 650;
+    color: white;
+    background-color: black;
+    width: 300px;
+    height: 100px;
+}
+
+
+.sw-btn {
+    margin: 15px;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background-color: black;
+    font-size: 20px;
+    transition: all 0.3s ease;
+
+}
+
+.sw-btn:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}

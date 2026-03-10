@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Сканнер подписок</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#features">что умеем</a></li>
+                <li><a href="#reviews">отзывы</a></li>
+                <li><a href="#tariffs">тарифы</a></li>
+                <li><a href="#faq">вопросы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">узнай, куда уходят деньги на подписки</h1>
+                <p class="hero__subtitle">
+                    мы покажем, за что ты платишь — и где можно сэкономить
+                </p>
+
+                <div class="hero__actions">
+                    <button class="hero__button hero__button--primary" type="button">
+                        начать экономить
+                    </button>
+                    <button class="hero__button hero__button--secondary" type="button">
+                        попробовать бесплатно
+                    </button>
+                </div>
+            </div>
+
+            <img src="images/phone.png" alt="Мокап приложения" class="hero__phone-mockup" />
+        </section>
+
+        <section class="features" id="features">
+            <div class="features__content">
+                <span class="reveal-line"></span>
+                <h2 class="features__title reveal reveal--fade">возможности сервиса</h2>
+
+                <div class="features__grid">
+                    <article class="features__card reveal reveal--blur" style="transition-delay: .3s">
+                        <h3 class="features__card-title">Автоматический список подписок</h3>
+                        <p class="features__card-text">
+                            Мы сами найдём регулярные списания и соберём их в одном месте: сервис, сумма, период и
+                            следующая дата
+                            оплаты. Никакой ручной таблицы.
+                        </p>
+                    </article>
+
+                    <article class="features__card reveal reveal--blur" style="transition-delay: .5s">
+                        <h3 class="features__card-title">Статистика расходов</h3>
+                        <p class="features__card-text">
+                            Показываем, сколько ты тратишь в месяц и год на подписки. Видно, где уходит больше всего и
+                            где можно
+                            сократить расходы.
+                        </p>
+                    </article>
+
+                    <article class="features__card reveal reveal--blur" style="transition-delay: .7s">
+                        <h3 class="features__card-title">Рекомендации по экономии</h3>
+                        <p class="features__card-text">
+                            Мы анализируем активность и подсказываем, какие подписки используются редко. Лишнее можно
+                            отключить в пару
+                            кликов.
+                        </p>
+                    </article>
+
+                    <article class="features__card reveal reveal--blur" style="transition-delay: .8s">
+                        <h3 class="features__card-title">Напоминания перед списанием</h3>
+                        <p class="features__card-text">
+                            Получай уведомление за несколько дней до оплаты и решай — продлить или отменить. Больше
+                            никаких
+                            неожиданных списаний.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="features__footer">
+                    <div class="features__subs subs-list panel reveal reveal--up">
+                        <h3 class="subs-list__title">список подписок</h3>
+                        <div class="subs-list__content">
+                            <article class="subs-list__item"> <img src="./images/netflix.png" alt="Логотип нетфликс"
+                                    class="subs-list__logo"> <span class="subs-list__name">Netflix</span> <span
+                                    class="subs-list__tariffs">699 ₽</span> <button
+                                    class="subs-list__button">отключить</button> </article>
+                            <article class="subs-list__item"> <img src="./images/spotify.png" alt="Логотип спотифай"
+                                    class="subs-list__logo"> <span class="subs-list__name">Spotify</span> <span
+                                    class="subs-list__tariffs">299 ₽</span> <button
+                                    class="subs-list__button">отключить</button> </article>
+                            <article class="subs-list__item"> <img src="./images/youtube.png" alt="Логотип ютуб"
+                                    class="subs-list__logo"> <span class="subs-list__name">YouTube Premium</span> <span
+                                    class="subs-list__tariffs">319 ₽</span> <button
+                                    class="subs-list__button">отключить</button> </article>
+                        </div>
+                    </div>
+                    <div class="features__stats panel reveal reveal--up">
+                        <h2 class='features__stats-title'>сэкономлено за год</h2>
+                        <p class='features__stats-total'>6360 ₽</p>
+                        <p class="features__stats-text"> Вы отключили несколько ненужных подписок и сэкономили 6360 ₽ за
+                            год. Это как бесплатный обед каждую неделю! </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="reviews__content">
+                <span class="reveal-line"></span>
+                <h2 class="reviews__title reveal reveal--fade">отзывы пользователей</h2>
+
+                <div class="reviews__grid">
+
+                    <article class="comment reveal reveal--up">
+                        <span class="comment__author">Алексей</span>
+                        <span class="comment__rating" aria-label="Рейтинг 5 из 5">★★★★★</span>
+                        <p class="comment__text">
+                            Думал, что у меня максимум 3–4 подписки. Оказалось — 9. Сервис показал всё в одном месте, и
+                            я сразу отключил
+                            лишнее. Уже через месяц почувствовал разницу в бюджет
+                        </p>
+                        <p class="comment__profit">общая выгода: <span class="comment__total">1299 ₽</span></p>
+                    </article>
+
+                    <article class="comment reveal reveal--up">
+                        <span class="comment__author">Екатерина</span>
+                        <span class="comment__rating" aria-label="Рейтинг 4 из 5">★★★★</span>
+                        <p class="comment__text">
+                            Для студента каждые 300–500 рублей имеют значение. Нашла две подписки, которыми вообще не
+                            пользовалась.
+                            Уведомления перед списанием — просто спасение.
+                        </p>
+                        <p class="comment__profit">общая выгода: <span class="comment__total">1800 ₽</span></p>
+                    </article>
+
+                    <article class="comment reveal reveal--up">
+                        <span class="comment__author">Мария</span>
+                        <span class="comment__rating" aria-label="Рейтинг 5 из 5">★★★★★</span>
+                        <p class="comment__text">
+                            Очень наглядная статистика — видно, сколько уходит в месяц и в год. Когда увидела годовую
+                            сумму, сразу
+                            пересмотрела свои привычки. Экономия получилась больше 6000 ₽.
+                        </p>
+                        <p class="comment__profit">общая выгода: <span class="comment__total">10599 ₽</span></p>
+                    </article>
+
+                    <article class="comment reveal reveal--up">
+                        <span class="comment__author">Илья</span>
+                        <span class="comment__rating" aria-label="Рейтинг 5 из 5">★★★★★</span>
+                        <p class="comment__text">
+                            Нравится, что ничего не нужно вести вручную. Сервис сам находит регулярные списания и
+                            показывает следующую
+                            дату оплаты. Минимум действий — максимум пользы.
+                        </p>
+                        <p class="comment__profit">общая выгода: <span class="comment__total">2500 ₽</span></p>
+                    </article>
+
+                    <article class="comment reveal reveal--up">
+                        <span class="comment__author">Андрей</span>
+                        <span class="comment__rating" aria-label="Рейтинг 5 из 5">★★★★★</span>
+                        <p class="comment__text">
+                            Постоянно забывал отменить пробные периоды. Теперь приходит напоминание за несколько дней —
+                            и больше нет
+                            неожиданных списаний. Очень удобно.
+                        </p>
+                        <p class="comment__profit">общая выгода: <span class="comment__total">519 ₽</span></p>
+                    </article>
+
+                    <article class="comment reveal reveal--up">
+                        <span class="comment__author">Дмитрий</span>
+                        <span class="comment__rating" aria-label="Рейтинг 4 из 5">★★★★</span>
+                        <p class="comment__text">
+                            Был уверен, что всё держу под контролем, но нашёл старую подписку, которая списывала деньги
+                            почти год.
+                            После подключения сервиса навёл порядок за один вечер.
+                        </p>
+                        <p class="comment__profit">общая выгода: <span class="comment__total">6399 ₽</span></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="tariffs" id="tariffs">
+            <div class="tariffs__content">
+                <span class="reveal-line"></span>
+                <h2 class="tariffs__title reveal reveal--fade">тарифы</h2>
+                <div class="tariffs__grid reveal reveal--up">
+                    <article class="tariffs__item tariffs__item--start">
+                        <span class="tariffs__name tariffs__name--start">start</span>
+                        <span class="tariffs__price tariffs__price--start">0 ₽</span>
+                        <span class="tariffs__description tariffs__description--start">
+                            ✔ Автоматическое обнаружение подписок<br />
+                            ✔ Общий список расходов за месяц<br />
+                            ✔ Базовые уведомления о списаниях
+                        </span>
+                        <button class="tariffs__button tariffs__button--start" type="button">подключить</button>
+                    </article>
+
+                    <article class="tariffs__item tariffs__item--pro">
+                        <span class="tariffs__name tariffs__name--pro">pro</span>
+                        <span class="tariffs__price tariffs__price--pro">299 ₽</span>
+                        <span class="tariffs__description tariffs__description--pro">
+                            ✔ Полная статистика расходов за год<br />
+                            ✔ Уведомления за 5 дней до списания<br />
+                            ✔ Рекомендации по экономии
+                        </span>
+                        <button class="tariffs__button tariffs__button--pro" type="button">подключить</button>
+                    </article>
+
+                    <article class="tariffs__item tariffs__item--diamond">
+                        <span class="tariffs__name tariffs__name--diamond">diamond</span>
+                        <span class="tariffs__price tariffs__price--diamond">599 ₽</span>
+                        <span class="tariffs__description tariffs__description--diamond">
+                            ✔ Сравнение расходов по категориям<br />
+                            ✔ История расходов за несколько лет<br />
+                            ✔ Эксклюзивные отчёты
+                        </span>
+                        <button class="tariffs__button tariffs__button--diamond" type="button">подключить</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="faq__content">
+                <span class="reveal-line"></span>
+                <h2 class="faq__title reveal reveal--fade">частые вопросы</h2>
+
+                <div class="faq__accordion reveal reveal--up">
+                    <details class="faq__item" name="faq">
+                        <summary class="faq__question">
+                            как именно сервис находит мои подписки?
+                        </summary>
+                        <div class="faq__answer">
+                            Мы используем алгоритм анализа регулярных транзакций, который автоматически определяет
+                            повторяющиеся
+                            списания, их периодичность и источник.
+                            <br /><br />
+                            Система распознаёт название сервиса, сумму, частоту оплаты и рассчитывает следующую дату
+                            списания. Чем
+                            дольше вы пользуетесь сервисом, тем точнее становится анализ.
+                            <br /><br />
+                            Вам не нужно ничего вводить вручную — всё происходит автоматически.
+                        </div>
+                    </details>
+
+                    <details class="faq__item" name="faq">
+                        <summary class="faq__question">
+                            что произойдёт, если появится новая подписка?
+                        </summary>
+                        <div class="faq__answer">
+                            Система автоматически обнаружит новое регулярное списание и добавит его в общий список.
+                            <br /><br />
+                            Вы получите уведомление и сможете сразу принять решение — оставить подписку или отключить её
+                            до следующего
+                            платежа.
+                            <br /><br />
+                            Никаких неожиданных списаний — только полный контроль.
+                        </div>
+                    </details>
+
+                    <details class="faq__item" name="faq">
+                        <summary class="faq__question">
+                            что будет, если я удалю подписку из списка?
+                        </summary>
+                        <div class="faq__answer">
+                            Если вы отключите подписку через сервис, мы больше не будем учитывать её в статистике и
+                            напоминаниях. Если
+                            же вы просто удалите её из списка вручную, но списания продолжатся, система снова обнаружит
+                            регулярный
+                            платёж и покажет его в общем списке.
+                            <br /><br />
+                            Это сделано для того, чтобы вы не пропустили реальные расходы и всегда видели актуальную
+                            картину своих
+                            подписок.
+                        </div>
+                    </details>
+
+                    <details class="faq__item" name="faq">
+                        <summary class="faq__question">
+                            как формируется статистика расходов?
+                        </summary>
+                        <div class="faq__answer">
+                            Мы анализируем регулярные списания и группируем их по сервисам, суммам и периодичности. На
+                            основе этих
+                            данных рассчитывается ваш месячный и годовой расход.
+                            <br /><br />
+                            Также система показывает динамику: увеличились ли траты, появились ли новые подписки и какие
+                            сервисы
+                            занимают наибольшую долю бюджета.
+                            <br /><br />
+                        </div>
+                    </details>
+
+                    <details class="faq__item" name="faq">
+                        <summary class="faq__question">
+                            можно ли пользоваться сервисом бесплатно?
+                        </summary>
+                        <div class="faq__answer">
+                            Да, в бесплатном тарифе доступно автоматическое обнаружение подписок, базовая статистика и
+                            уведомления
+                            перед списаниями.
+                            <br /><br />
+                            Если вам потребуется расширенная аналитика, персональные рекомендации и гибкие настройки
+                            уведомлений, вы
+                            можете перейти на платный тариф в любой момент без потери данных.
+                        </div>
+                    </details>
+
+                    <details class="faq__item" name="faq">
+                        <summary class="faq__question">
+                            что делать, если сервис нашёл лишнюю подписку?
+                        </summary>
+                        <div class="faq__answer">
+                            Иногда система может определить регулярный платёж как подписку, даже если это повторяющаяся
+                            оплата за другой
+                            сервис.
+                            <br /><br />
+                            В таком случае вы можете вручную отметить платёж как разовый или скрыть его из списка. Мы
+                            учитываем такие
+                            действия, чтобы алгоритм становился точнее.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__col">
+                <div class="footer__col-title">Адрес:</div>
+                <div class="footer__col-content">
+                    <p>г. Москва, ул. Пушкина, д. колотушкина</p>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <div class="footer__col-title">Телефон:</div>
+                <div class="footer__col-content">
+                    <p><a href="tel:+78005553535">8 (800) 555-35-35</a></p>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <div class="footer__col-title">E-mail:</div>
+                <div class="footer__col-content">
+                    <p><a href="mailto:barabaraberebere@gmail.com">barabaraberebere@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
